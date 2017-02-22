@@ -5,7 +5,7 @@
     state=installed
 
 - name: Start and enable firewalld service
-  service: >
+  systemd: >
     name=firewalld
     state=started
     enabled=yes
