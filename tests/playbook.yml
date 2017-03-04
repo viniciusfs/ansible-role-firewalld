@@ -1,11 +1,5 @@
 ---
 - hosts: all
-  vars:
-    firewalld_ports:
-      - port: 22/tcp
-    firewalld_services:
-      - service: http
-      - service: https
 
   roles:
     - role: ansible-role-firewalld
